@@ -1,0 +1,30 @@
+nav {
+    background-color: #f8f9fa;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .brand {
+    font-weight: bold;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    padding: 0 10px;
+  }
+  
+  .nav-list li a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .nav-list li a:hover {
+    text-decoration: underline;
+  }
+  
