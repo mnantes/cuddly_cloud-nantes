@@ -1,15 +1,19 @@
+// src/components/NavBar.js
 import React from 'react';
-import './NavBar.css';
+import CartWidget from './CartWidget';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function NavBar() {
   return (
-    <nav>
-      <div className="brand">cuddly cloud</div>
-      <ul className="nav-list">
-        <li><a href="#features">features</a></li>
-        <li><a href="#pricing">pricing</a></li>
-        <li><a href="#about">about</a></li>
-      </ul>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <a className="navbar-brand" href="#">SUA_MARCA</a>
+      <div className="collapse navbar-collapse" id="navbarNav">
+        <ul className="navbar-nav ml-auto">
+          <li className="nav-item">
+            <CartWidget />
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 }
