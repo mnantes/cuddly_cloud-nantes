@@ -1,15 +1,20 @@
 // src/App.js
 import React from 'react';
-import NavBar from './components/NavBar';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import ItemListContainer from './components/ItemListContainer';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <ItemListContainer greeting="Bem-vindo à nossa loja de ursos de pelúcia!" />
-    </div>
+    <Router>
+      <div className="App">
+        <Link to="/" className="title-link">
+          <h1>Bem-vindo à Cuddly Cloud</h1>
+        </Link>
+        <Routes>
+          <Route path="/" element={<ItemListContainer greeting="Nossos Produtos" />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
